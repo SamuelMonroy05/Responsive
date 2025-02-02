@@ -1,0 +1,67 @@
+/* ======== Estilos Generales ======== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+/* ======== Contenedor de imágenes y videos ======== */
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columnas en pantallas grandes */
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* ======== Estilos para Imágenes ======== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ======== Imagen con Object Fit ======== */
+.cover {
+    width: 100%;
+    height: 300px; /* Tamaño fijo */
+    object-fit: cover; /* Recorta sin deformar */
+}
+
+/* ======== Video Responsive ======== */
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Relación de aspecto 16:9 */
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* ======== Video Local ======== */
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ======== Responsividad ======== */
+@media screen and (max-width: 768px) {
+    .contenedor {
+        grid-template-columns: 1fr; /* 1 columna en móviles */
+    }
+
+    .cover {
+        height: 200px; /* Reduce altura en móviles */
+    }
+}

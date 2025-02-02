@@ -1,0 +1,75 @@
+/* ======== Estilos generales ======== */
+body {
+    font-family: Arial, sans-serif;  /* Define la fuente principal */
+    text-align: center;  /* Centra el texto en toda la página */
+    padding: 50px;  /* Agrega un espacio interno alrededor del contenido */
+    transition: background 0.5s, font-size 0.5s;  /* Suaviza los cambios de color y tamaño de fuente */
+}
+
+h1 {
+    font-size: 2em;  /* Define el tamaño del encabezado */
+}
+
+/* ======== Media Queries ======== */
+
+/* Estilos para pantallas grandes (PC / Laptop) */
+@media screen and (min-width: 1024px) {
+    body {
+        transition-property: background-color, transform;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+        background-color: #3498db;  /* Cambia el fondo a azul */
+        font-size: 24px;  /* Aumenta el tamaño de la fuente */
+    }
+}
+
+/* Estilos para tabletas (medianas) */
+@media screen and (max-width: 1023px) and (min-width: 800px) {
+    body {
+        transition-property: background-color, transform;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+        background-color: #ec0000;  /* Cambia el fondo a naranja */
+        font-size: 20px;  /* Ajusta el tamaño de la fuente */
+    }
+}
+/* Estilos para móviles */
+@media screen and (max-width: 599px) {
+    body {
+        transition-property: background-color, transform;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+        background-color: #2ecc71;  /* Cambia el fondo a verde */
+        font-size: 16px;  /* Reduce el tamaño de la fuente */
+    }
+
+}
+
+/*estilos dark mode*/
+/*@media (prefers-color-scheme: dark), screen and (min-width: 700px) and (max-width: 750px){
+    body  {
+         
+        background-color: black;
+        color: white;    
+        font-size: 35px; 
+        font-family: 'Times New Roman', Times, serif;
+    }
+}*/
+
+/*estilos extra grandes*/
+@media screen and (min-width: 1440px){
+    body {
+        transition-property: background-color, transform;
+        transition-duration: 2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+        background-color: #f300d3;  /* Cambia el fondo a fuxia */
+            font-size: 35px;  /* aumenta el tamaño de la fuente */
+            font-family: 'Times New Roman', Times, serif;
+    }
+}
+
+

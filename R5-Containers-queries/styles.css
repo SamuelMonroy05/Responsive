@@ -1,0 +1,75 @@
+/* ======== Estilos Generales ======== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+/* ======== Contenedor con Container Queries ======== */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding: 2rem;
+    contain: inline-size; 
+}
+
+/* ======== Tarjetas ======== */
+.card {
+    background-color: rgb(175, 0, 0);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    width: 100%; /* Predeterminado en móviles */
+}
+
+/* ======== Container Queries para ajustes de tamaño y disposición ======== */
+
+/* Si el contenedor es mayor a 400px, las tarjetas ocupan el 50% del ancho */
+@container (min-width: 400px) {
+    .card {
+        background-color: #004b5e;
+        width: 45%; 
+    }
+}
+
+/* Si el contenedor es mayor a 600px, las tarjetas ocupan el 50% */
+@container (min-width: 600px) {
+    .card {
+        background-color: chartreuse;
+        width: 45%; 
+    }
+}
+
+
+@container (min-width: 900px) {
+    .card {
+        background-color: brown;
+        width: 30%; 
+    }
+}
+
+
+@container (min-width: 600px) {
+    .card {
+        background-color: #004b5e; 
+    }
+}   
+
+@container (min-width: 900px) {
+    .card {
+        background-color: #000000; 
+        flex-direction: column;
+    }
+}
+
+@container  (min-width: 800px) {
+    .grid {
+        flex-direction: row; 
+        background-color: aqua;
+    }
+}
